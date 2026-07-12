@@ -122,7 +122,7 @@ var theme = {
    * Do not forget to remove dependency from src/js/vendor/ and recompile.
    */
   init: function () {
-    theme.stickyHeader();
+    // theme.stickyHeader();
     theme.subMenu();
     theme.offCanvas();
     theme.isotope();
@@ -176,6 +176,24 @@ var theme = {
       }
     };
     var banner = new Headhesive('.navbar', options);
+
+    // Smart sticky header logic: hide on scroll down, show on scroll up
+    var lastScrollTop = 0;
+    window.addEventListener("scroll", function() {
+      var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      var navbarClone = document.querySelector('.navbar-clone');
+      if (navbarClone) {
+        if (currentScroll > lastScrollTop && currentScroll > 350) {
+          // Scrolling down
+          navbarClone.style.transform = 'translateY(-100%)';
+          navbarClone.style.transition = 'transform 0.3s ease-in-out';
+        } else {
+          // Scrolling up
+          navbarClone.style.transform = 'translateY(0)';
+        }
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, false);
   },
   /**
    * Sub Menus

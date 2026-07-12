@@ -39983,16 +39983,6 @@ figure.m-0.p-0>img {
   border-color: rgba(63, 120, 224, 0.1);
 }
 
-.team-avatar-wrap img {
-  transition: all 0.4s ease;
-  border: 4px solid transparent;
-}
-
-.swiper-slide:hover .team-avatar-wrap img {
-  transform: scale(1.05);
-  border-color: #3f78e0;
-  box-shadow: 0 15px 25px rgba(63, 120, 224, 0.2);
-}
 
 .contact-icon-box {
   transition: all 0.3s ease;
@@ -40510,25 +40500,6 @@ figure.m-0.p-0>img {
 .perspective-container {
   perspective: 1200px;
   transform-style: preserve-3d;
-}
-
-/* Shrink logo inside the sticky cloned navbar */
-.navbar-clone .navbar-logo-img {
-  height: 55px !important;
-  transition: height 0.3s ease;
-}
-
-/* Give a smooth transition to original logo just in case */
-.navbar .navbar-logo-img {
-  transition: height 0.3s ease;
-}
-
-/* Remove padding from cloned navbar to shrink its height */
-.navbar-clone {
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-  background-color: rgba(255, 255, 255, 0.98) !important;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* Adjust anchor scroll padding to account for sticky header */
