@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="assets/fonts/unicons/unicons.css">
   <link rel="stylesheet" href="assets/css/plugins.css">
   <link rel="stylesheet" href="./assets/css/style.css?v=2.0">
+  <link rel="stylesheet" href="./assets/css/custom.css">
 </head>
 
 <body class="onepage">
@@ -113,17 +114,17 @@
               <div class="img-slideshow anim-float anim-glow" data-slideshow="true">
                 <div class="slide-item active">
                   <img class="hero-slideshow-img w-full m-[0_auto]"
-                    style="height: 60vh; min-height: 700px; max-height: 650px; object-fit: cover; border-radius: 0.5rem;"
+                    style="height: 60vh; max-height: 650px; object-fit: cover; border-radius: 0.5rem;"
                     src="assets/img/illustrations/i8.png" alt="Publishing workspace">
                 </div>
                 <div class="slide-item">
                   <img class="hero-slideshow-img w-full m-[0_auto]"
-                    style="height: 60vh; min-height: 700px; max-height: 650px; object-fit: cover; border-radius: 0.5rem;"
+                    style="height: 60vh; max-height: 650px; object-fit: cover; border-radius: 0.5rem;"
                     src="assets/img/illustrations/hero_publishing.png" alt="Publishing illustration">
                 </div>
                 <div class="slide-item">
                   <img class="hero-slideshow-img w-full m-[0_auto]"
-                    style="height: 60vh; min-height: 700px; max-height: 650px; object-fit: cover; border-radius: 0.5rem;"
+                    style="height: 60vh; max-height: 650px; object-fit: cover; border-radius: 0.5rem;"
                     src="assets/img/illustrations/hero_books_stack.png" alt="Books stack">
                 </div>
               </div>
@@ -390,9 +391,9 @@
                 time by choosing our professional team.</h3>
               <p>Our professional team blends expertise, creativity, and dedication to deliver publishing excellence
                 while saving your valuable time.</p>
-              <a href="#Team"
+              <!-- <a href="#Team"
                 class="btn btn-primary !text-white !bg-[#3f78e0] border-[#3f78e0] hover:text-white hover:bg-[#3f78e0] hover:!border-[#3f78e0]   active:text-white active:bg-[#3f78e0] active:border-[#3f78e0] disabled:text-white disabled:bg-[#3f78e0] disabled:border-[#3f78e0] !rounded-[50rem] !mt-3 hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">See
-                All Members</a>
+                All Members</a> -->
             </div>
             <!--/column -->
             <div
@@ -402,114 +403,103 @@
                 <div class="swiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <div class="team-avatar-wrap">
-                        <img class="rounded-[35%] !mx-auto !mb-4"
+                      <div class="team-avatar-wrap rounded-[35%] !mx-auto !mb-4">
+                        <img
                           style="width: 240px; height: 320px; object-fit: cover; object-position: top center; background-color: #e5e7eb;"
-                          src="assets/img/photos/person_1.jpeg" srcset="assets/img/photos/person_1.jpeg" alt="image">
+                          src="assets/img/photos/person_1.jpeg" alt="image">
+                        <div class="avatar-overlay">
+                          <nav class="nav social justify-center !text-center !mb-0">
+                            <a href="onepage.html#">
+                              <i class="uil uil-twitter before:content-['\ed59']"></i>
+                            </a>
+                            <a href="onepage.html#">
+                              <i class="uil uil-linkedin before:content-['\ebd1']"></i>
+                            </a>
+                            <a href="onepage.html#">
+                              <i class="uil uil-facebook-f before:content-['\eae2']"></i>
+                            </a>
+                          </nav>
+                        </div>
                       </div>
                       <h4 class="!mb-1">Selvarajan</h4>
                       <div class="!text-[0.65rem] uppercase !tracking-[0.02rem] font-bold !text-[#aab0bc] !mb-2">
                         Partner</div>
                       <p class="!mb-2"></p>
-                      <!-- <nav class="nav social justify-center !text-center  !mb-0">
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#">
-                          <i class="uil uil-twitter before:content-['\ed59'] text-[1rem] !text-[#5daed5]"></i></a>
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#">
-                          <i class="uil uil-linkedin before:content-['\ebd1'] text-[1rem] !text-[#3393c1]"></i></a>
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#">
-                          <i class="uil uil-facebook-f before:content-['\eae2'] text-[1rem] !text-[#4470cf]"></i></a>
-                      </nav> -->
-                      <!-- /.social -->
                     </div>
                     <!--/.swiper-slide -->
 
                     <div class="swiper-slide">
-                      <div class="team-avatar-wrap">
-                        <img class="rounded-[35%] !mx-auto !mb-4"
+                      <div class="team-avatar-wrap rounded-[35%] !mx-auto !mb-4">
+                        <img
                           style="width: 240px; height: 320px; object-fit: cover; object-position: top center; background-color: #e5e7eb;"
-                          src="assets/img/photos/person_2.jpeg" srcset="assets/img/photos/person_2.jpeg 2X" alt="image">
+                          src="assets/img/photos/person_2.jpeg" alt="image">
+                        <div class="avatar-overlay">
+                          <nav class="nav social justify-center !text-center !mb-0">
+                            <a href="onepage.html#">
+                              <i class="uil uil-twitter before:content-['\ed59']"></i>
+                            </a>
+                            <a href="onepage.html#">
+                              <i class="uil uil-linkedin before:content-['\ebd1']"></i>
+                            </a>
+                            <a href="onepage.html#">
+                              <i class="uil uil-facebook-f before:content-['\eae2']"></i>
+                            </a>
+                          </nav>
+                        </div>
                       </div>
                       <h4 class="!mb-1">Kanimozhi Selvarajan</h4>
                       <div class="!text-[0.65rem] uppercase !tracking-[0.02rem] font-bold !text-[#aab0bc] !mb-2">
                         Partner</div>
-                      <!-- <p class="!mb-2">Vivamus sagittis lacus vel augue laoreet rutrum.</p>
-                      <nav class="nav social justify-center !text-center  !mb-0">
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#"><i
-                            class="uil uil-twitter before:content-['\ed59'] text-[1rem] !text-[#5daed5]"></i></a>
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#"><i
-                            class="uil uil-linkedin before:content-['\ebd1'] text-[1rem] !text-[#3393c1]"></i></a>
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#"><i
-                            class="uil uil-facebook-f before:content-['\eae2'] text-[1rem] !text-[#4470cf]"></i></a>
-                      </nav> -->
-                      <!-- /.social -->
                     </div>
                     <!--/.swiper-slide -->
 
                     <div class="swiper-slide">
-                      <div class="team-avatar-wrap">
-                        <img class="rounded-[35%] !mx-auto !mb-4"
+                      <div class="team-avatar-wrap rounded-[35%] !mx-auto !mb-4">
+                        <img
                           style="width: 240px; height: 320px; object-fit: cover; object-position: top center; background-color: #e5e7eb;"
-                          src="assets/img/photos/person_3.jpeg" srcset="assets/img/photos/person_3.jpeg 2X" alt="image">
+                          src="assets/img/photos/person_3.jpeg" alt="image">
+                        <div class="avatar-overlay">
+                          <nav class="nav social justify-center !text-center !mb-0">
+                            <a href="onepage.html#">
+                              <i class="uil uil-twitter before:content-['\ed59']"></i>
+                            </a>
+                            <a href="onepage.html#">
+                              <i class="uil uil-linkedin before:content-['\ebd1']"></i>
+                            </a>
+                            <a href="onepage.html#">
+                              <i class="uil uil-facebook-f before:content-['\eae2']"></i>
+                            </a>
+                          </nav>
+                        </div>
                       </div>
                       <h4 class="!mb-1">Sundaram Ramachandran</h4>
                       <div class="!text-[0.65rem] uppercase !tracking-[0.02rem] font-bold !text-[#aab0bc] !mb-2">
                         Editorial Consultant</div>
-                      <!-- <p class="!mb-2">Vivamus sagittis lacus vel augue laoreet rutrum.</p>
-                      <nav class="nav social justify-center !text-center  !mb-0">
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#"><i
-                            class="uil uil-twitter before:content-['\ed59'] text-[1rem] !text-[#5daed5]"></i></a>
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#"><i
-                            class="uil uil-linkedin before:content-['\ebd1'] text-[1rem] !text-[#3393c1]"></i></a>
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#"><i
-                            class="uil uil-facebook-f before:content-['\eae2'] text-[1rem] !text-[#4470cf]"></i></a>
-                      </nav> -->
-                      <!-- /.social -->
                     </div>
                     <!--/.swiper-slide -->
 
                     <div class="swiper-slide">
-                      <div class="team-avatar-wrap">
-                        <img class="rounded-[35%] !mx-auto !mb-4"
+                      <div class="team-avatar-wrap rounded-[35%] !mx-auto !mb-4">
+                        <img
                           style="width: 240px; height: 320px; object-fit: cover; object-position: top center; background-color: #e5e7eb;"
-                          src="assets/img/photos/person_4.jpeg" srcset="assets/img/photos/person_4.jpeg 2X" alt="image">
+                          src="assets/img/photos/person_4.jpeg" alt="image">
+                        <div class="avatar-overlay">
+                          <nav class="nav social justify-center !text-center !mb-0">
+                            <a href="onepage.html#">
+                              <i class="uil uil-twitter before:content-['\ed59']"></i>
+                            </a>
+                            <a href="onepage.html#">
+                              <i class="uil uil-linkedin before:content-['\ebd1']"></i>
+                            </a>
+                            <a href="onepage.html#">
+                              <i class="uil uil-facebook-f before:content-['\eae2']"></i>
+                            </a>
+                          </nav>
+                        </div>
                       </div>
                       <h4 class="!mb-1">Dhanlakshmi Vijayakumar</h4>
                       <div class="!text-[0.65rem] uppercase !tracking-[0.02rem] font-bold !text-[#aab0bc] !mb-2">
                         Senior Executive Editor</div>
-                      <!-- <p class="!mb-2">Vivamus sagittis lacus vel augue laoreet rutrum.</p>
-                      <nav class="nav social justify-center !text-center  !mb-0">
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#"><i
-                            class="uil uil-twitter before:content-['\ed59'] text-[1rem] !text-[#5daed5]"></i></a>
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#"><i
-                            class="uil uil-linkedin before:content-['\ebd1'] text-[1rem] !text-[#3393c1]"></i></a>
-
-                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                          href="onepage.html#"><i
-                            class="uil uil-facebook-f before:content-['\eae2'] text-[1rem] !text-[#4470cf]"></i></a>
-                      </nav>-->
-                      <!-- /.social -->
                     </div>
                     <!--/.swiper-slide -->
                   </div>
@@ -526,7 +516,7 @@
                     <path d="m15 18-6-6 6-6" />
                   </svg>
                 </button>
-                <span class="review-nav-hint">More members</span>
+                <span class="review-nav-hint">More Members</span>
                 <button class="review-nav-btn" id="team-next-btn" aria-label="Next member"
                   onclick="document.querySelector('#team-swiper .swiper').swiper.slideNext()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
@@ -625,7 +615,7 @@
                     <path d="m15 18-6-6 6-6" />
                   </svg>
                 </button>
-                <span class="review-nav-hint">More reviews</span>
+                <span class="review-nav-hint">More Reviews</span>
                 <button class="review-nav-btn" id="review-next-btn" aria-label="Next review"
                   onclick="document.querySelector('#review-swiper .swiper').swiper.slideNext()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
@@ -709,41 +699,40 @@
       <!-- /.wrapper -->
     </section>
     <!-- /section -->
+    <section id="video-showcase" style="background: #21262c; padding: 5rem 0;">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 2.5rem;" class="anim-reveal slide-up">
+          <span
+            style="display: inline-block; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #3f78e0; margin-bottom: 0.75rem;">Watch
+            Our Story</span>
+          <h2 style="font-size: 2rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">See What We Do</h2>
+
+        </div>
+        <div
+          style="max-width: 900px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(63, 120, 224, 0.1); position: relative;"
+          class="anim-reveal zoom-3d">
+          <!-- Decorative glow behind the video -->
+          <div
+            style="position: absolute; inset: -2px; border-radius: 18px; background: linear-gradient(135deg, rgba(63, 120, 224, 0.3), rgba(90, 156, 245, 0.1), rgba(63, 120, 224, 0.3)); z-index: 0;">
+          </div>
+          <video id="showcase-video"
+            style="width: 100%; display: block; border-radius: 16px; position: relative; z-index: 1;" autoplay controls
+            muted loop playsinline preload="metadata" poster="">
+            <source src="./assets/video/Finial_clip.mp4" type="video/mp4">
+            Your browser does not support the video clip.
+          </video>
+        </div>
+        <div class="flex flex-wrap mx-[-15px] !mt-[-30px] xl:!mt-0 lg:!mt-0">
+          <div style="max-width: 900px; margin: 50px auto;" class="anim-reveal zoom-3d">
+            <p style="color: #959ca9; font-size: 1.05rem; max-width: 900px; margin: 0 auto; text-align: center;">
+              Discover
+              how GPublishing Service brings your ideas to life from manuscript to masterpiece.</p>
+          </div>
+        </div>
+    </section>
+    <!-- /Video Showcase Section -->
   </div>
   <!-- /.content-wrapper -->
-
-  <!-- Video Showcase Section -->
-  <section id="video-showcase" style="background: #21262c; padding: 5rem 0;">
-    <div class="container">
-      <div style="text-align: center; margin-bottom: 2.5rem;" class="anim-reveal slide-up">
-        <span
-          style="display: inline-block; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #3f78e0; margin-bottom: 0.75rem;">Watch
-          Our Story</span>
-        <h2 style="font-size: 2rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">See What We Do</h2>
-
-      </div>
-      <div
-        style="max-width: 900px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(63, 120, 224, 0.1); position: relative;"
-        class="anim-reveal zoom-3d">
-        <!-- Decorative glow behind the video -->
-        <div
-          style="position: absolute; inset: -2px; border-radius: 18px; background: linear-gradient(135deg, rgba(63, 120, 224, 0.3), rgba(90, 156, 245, 0.1), rgba(63, 120, 224, 0.3)); z-index: 0;">
-        </div>
-        <video id="showcase-video"
-          style="width: 100%; display: block; border-radius: 16px; position: relative; z-index: 1;" autoplay controls
-          muted loop playsinline preload="metadata" poster="">
-          <source src="./assets/video/Finial_clip.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="flex flex-wrap mx-[-15px] !mt-[-30px] xl:!mt-0 lg:!mt-0">
-        <div style="max-width: 900px; margin: 50px auto;" class="anim-reveal zoom-3d">
-          <p style="color: #959ca9; font-size: 1.05rem; max-width: 900px; margin: 0 auto; text-align: center;">Discover
-            how GPublishing Service brings your ideas to life from manuscript to masterpiece.</p>
-        </div>
-      </div>
-  </section>
-  <!-- /Video Showcase Section -->
   <footer class="!bg-[#21262c] shrink-0">
     <div class="container py-16 xl:!py-20 lg:!py-20 md:!py-20">
       <div class="flex flex-wrap mx-[-15px] !mt-[-30px] xl:!mt-0 lg:!mt-0">
@@ -751,10 +740,10 @@
           class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
           <div class="widget !text-[#cacaca] align-center md:!pr-[30px]">
             <img class="!mb-4" src="assets/img/Logo/GPS_LOGO.png" alt="GPS"
-              style="width: 200px; margin-left: 60px; margin-top: -90px;">
-            <p class="!mb-4 text-center" style="margin-left: 30px;">© 2026 GPublishing Services <br
-                class="hidden xl:block lg:block !text-[#cacaca]">All rights reserved.</p>
-            <nav class="nav social text-center" style="margin-left: 30px;">
+              style="width: 200px; margin-left: auto; margin-right: auto; margin-top: -90px; display: block;">
+            <p class="!mb-4 text-center">© 2026 GPublishing Services <br
+                class="hidden xl:block lg:block !text-[#cacaca]">All rights reserved to GPS.</p>
+            <nav class="nav social text-center" style="justify-content: center;">
 
               <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
                 href="https://www.linkedin.com/company/gpublishingservice/?viewAsMember=true"><i

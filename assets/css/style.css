@@ -40054,6 +40054,28 @@ figure.m-0.p-0>img {
   z-index: 10;
 }
 
+/* Fix: Team Swiper pagination dots overlapping position text */
+#team-swiper {
+  padding-bottom: 45px !important;
+  position: relative;
+}
+
+#team-swiper .swiper-pagination {
+  bottom: 5px !important;
+  top: auto !important;
+}
+
+/* Also fix review-swiper pagination overlap */
+#review-swiper {
+  padding-bottom: 45px !important;
+  position: relative;
+}
+
+#review-swiper .swiper-pagination {
+  bottom: 5px !important;
+  top: auto !important;
+}
+
 /* Mobile Responsive Fixes */
 @media (max-width: 991.98px) {
   .navbar-brand img {
@@ -40535,4 +40557,293 @@ html {
   margin: 0 auto;
   display: block;
 }
+
+/* ============================================
+   PHONE VIEW RESPONSIVE FIXES (max-width: 767px)
+   ============================================ */
+@media (max-width: 767.98px) {
+
+  /* --- Hero Section --- */
+  #home {
+    min-height: auto;
+  }
+
+  #home .wrapper {
+    min-height: auto;
+  }
+
+  #home .container {
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  #home .flex-wrap.\!mt-10 {
+    margin-top: 0.5rem !important;
+  }
+
+  .hero-slideshow-img {
+    max-height: 250px !important;
+    min-height: unset !important;
+    height: auto !important;
+    width: 100% !important;
+    object-fit: contain !important;
+    border-radius: 0.4rem !important;
+  }
+
+  /* Override inline styles on hero images */
+  #home .img-slideshow .slide-item img {
+    height: auto !important;
+    min-height: unset !important;
+    max-height: 250px !important;
+    object-fit: contain !important;
+  }
+
+  .typing-container-js {
+    font-size: 1.3rem !important;
+    white-space: normal !important;
+    word-break: break-word;
+  }
+
+  #home h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .lead {
+    font-size: 0.95rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .lead br {
+    display: none;
+  }
+
+  /* --- General Section Spacing --- */
+  section .container {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  /* --- Two-column Layout Sections --- */
+  /* Ensure image and text stack correctly with proper spacing */
+  section .flex-wrap {
+    margin-top: 0 !important;
+  }
+
+  section .flex-wrap > [class*="w-full"] {
+    margin-top: 1.5rem !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* Ensure images don't overflow */
+  section .img-slideshow,
+  section figure {
+    width: 100% !important;
+    overflow: hidden;
+  }
+
+  section .img-slideshow img,
+  section figure img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+  }
+
+  /* --- Services Section --- */
+  .hover-lift {
+    padding: 1.2rem 0.8rem !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .hover-lift h4 {
+    font-size: 1.05rem !important;
+  }
+
+  .hover-lift p {
+    font-size: 0.9rem !important;
+  }
+
+  /* --- About / Who We Are Section --- */
+  #process h3 {
+    font-size: 1.3rem !important;
+  }
+
+  #process .interactive-row {
+    padding: 0.75rem !important;
+  }
+
+  #process .interactive-row h4 {
+    font-size: 1rem !important;
+  }
+
+  #process .interactive-row p {
+    font-size: 0.88rem !important;
+  }
+
+  /* Accordion on phone */
+  .accordion-button,
+  .accordion-item button {
+    font-size: 0.95rem !important;
+    padding: 0.6rem 0 !important;
+  }
+
+  .card-body p {
+    font-size: 0.88rem !important;
+  }
+
+  /* --- Team Section --- */
+  #about .swiper-slide img {
+    width: 180px !important;
+    height: 240px !important;
+  }
+
+  #about h3 {
+    font-size: 1.3rem !important;
+  }
+
+  #about p {
+    font-size: 0.9rem !important;
+  }
+
+  .team-avatar-wrap {
+    margin-bottom: 0.5rem;
+  }
+
+  /* --- Testimonials / Projects Section --- */
+  #testimonials .icon-top {
+    padding: 1.2rem !important;
+  }
+
+  #testimonials blockquote p {
+    font-size: 0.92rem !important;
+  }
+
+  /* --- Contact Section --- */
+  #contact h3 {
+    font-size: 1.3rem !important;
+    line-height: 1.4 !important;
+  }
+
+  #contact h3 br {
+    display: none;
+  }
+
+  .contact-icon-box {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    flex-shrink: 0;
+  }
+
+  #contact address,
+  #contact p {
+    font-size: 0.9rem !important;
+  }
+
+  /* --- Video Showcase Section --- */
+  #video-showcase {
+    padding: 2.5rem 0 !important;
+  }
+
+  #video-showcase h2 {
+    font-size: 1.5rem !important;
+  }
+
+  #video-showcase p {
+    font-size: 0.9rem !important;
+    padding: 0 1rem;
+  }
+
+  /* --- Footer --- */
+  footer .container {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  footer .widget {
+    text-align: center !important;
+  }
+
+  footer .widget img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0 !important;
+    width: 140px !important;
+  }
+
+  footer .widget p {
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+
+  footer .widget .nav.social {
+    margin-left: 0 !important;
+    justify-content: center !important;
+  }
+
+  footer .flex-row {
+    justify-content: center;
+  }
+
+  footer .widget h4 {
+    text-align: center;
+  }
+
+  footer .widget ul {
+    text-align: center;
+  }
+
+  footer .widget address {
+    font-size: 0.88rem !important;
+  }
+
+  /* --- Swiper Navigation --- */
+  .review-nav-wrapper {
+    margin-top: 0.5rem;
+  }
+
+  .review-nav-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* --- Animation Adjustments for Mobile --- */
+  .anim-float {
+    animation: none !important;
+  }
+
+  .anim-3d-tilt:hover {
+    transform: none !important;
+  }
+
+  .perspective-container {
+    perspective: none !important;
+  }
+
+  /* Reduce 3D transform intensity on mobile for performance */
+  .anim-reveal.slide-left {
+    transform: translateX(-30px) !important;
+  }
+
+  .anim-reveal.slide-right {
+    transform: translateX(30px) !important;
+  }
+
+  .anim-reveal.slide-left.visible,
+  .anim-reveal.slide-right.visible {
+    transform: translateX(0) !important;
+  }
+
+  /* Prevent horizontal scroll caused by animations */
+  body,
+  html {
+    overflow-x: hidden !important;
+  }
+
+  section {
+    overflow-x: hidden;
+  }
 }
