@@ -122,3 +122,27 @@
 .team-avatar-wrap .avatar-overlay .social a:hover .uil-facebook-f {
   color: #1877f2 !important;
 }
+
+/* Hero Slideshow Image Sizing and Responsiveness */
+.hero-slideshow-img {
+  width: auto !important;
+  max-width: 100% !important;
+  height: 50vh !important;
+  max-height: 450px !important;
+  object-fit: contain !important;
+  border-radius: 0.5rem !important;
+  margin: 0 auto !important;
+  display: block !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05); /* Sleek modern shadow */
+}
+
+@media (max-width: 767.98px) {
+  .hero-slideshow-img {
+    height: auto !important;
+    max-height: 250px !important;
+    width: 100% !important;
+    object-fit: contain !important;
+    border-radius: 0.4rem !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+}
